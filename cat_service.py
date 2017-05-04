@@ -10,7 +10,7 @@ def get_cat(folder, name):
 
 
 def get_data_from_url(url):
-    response = requests.get(url)
+    response = requests.get(url, stream=True)
     return response.raw
 
 
